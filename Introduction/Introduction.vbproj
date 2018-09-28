@@ -91,10 +91,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls1\Form1.designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Controls1\frmControls1.designer.vb">
+      <DependentUpon>frmControls1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls1\Form1.vb">
+    <Compile Include="Controls1\frmControls1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls1\frmControl2.designer.vb">
@@ -108,6 +108,24 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\frmChild.Designer.vb">
+      <DependentUpon>frmChild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\frmChild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI\frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -127,14 +145,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls1\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Controls1\frmControls1.resx">
+      <DependentUpon>frmControls1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls1\frmControl2.resx">
       <DependentUpon>frmControl2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\frmChild.resx">
+      <DependentUpon>frmChild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
