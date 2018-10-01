@@ -143,6 +143,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PICTURE\frmImage.Designer.vb">
+      <DependentUpon>frmImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICTURE\frmImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICTURE\frmPicture.Designer.vb">
+      <DependentUpon>frmPicture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICTURE\frmPicture.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls1\frmControls1.resx">
@@ -168,6 +180,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICTURE\frmImage.resx">
+      <DependentUpon>frmImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICTURE\frmPicture.resx">
+      <DependentUpon>frmPicture.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
