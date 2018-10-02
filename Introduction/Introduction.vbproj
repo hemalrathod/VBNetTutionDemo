@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ALBUMVIEWER\frmAlbumViewer.Designer.vb">
+      <DependentUpon>frmAlbumViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ALBUMVIEWER\frmAlbumViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Controls1\frmControls1.designer.vb">
       <DependentUpon>frmControls1.vb</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ALBUMVIEWER\frmAlbumViewer.resx">
+      <DependentUpon>frmAlbumViewer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls1\frmControls1.resx">
       <DependentUpon>frmControls1.vb</DependentUpon>
     </EmbeddedResource>
