@@ -149,6 +149,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OOPS\frmOops.Designer.vb">
+      <DependentUpon>frmOops.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OOPS\frmOops.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OOPS\Twowheeler.vb" />
+    <Compile Include="OOPS\Vehicle.vb" />
     <Compile Include="PICTURE\frmImage.Designer.vb">
       <DependentUpon>frmImage.vb</DependentUpon>
     </Compile>
@@ -190,6 +198,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="OOPS\frmOops.resx">
+      <DependentUpon>frmOops.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PICTURE\frmImage.resx">
       <DependentUpon>frmImage.vb</DependentUpon>
     </EmbeddedResource>
@@ -222,5 +233,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
