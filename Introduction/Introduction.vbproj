@@ -109,6 +109,12 @@
     <Compile Include="Controls1\frmControl2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EVENTS\frmEvent.Designer.vb">
+      <DependentUpon>frmEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EVENTS\frmEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls1\frmControl2.resx">
       <DependentUpon>frmControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EVENTS\frmEvent.resx">
+      <DependentUpon>frmEvent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
