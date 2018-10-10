@@ -70,6 +70,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -107,6 +108,20 @@
       <DependentUpon>frmControl2.vb</DependentUpon>
     </Compile>
     <Compile Include="Controls1\frmControl2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATABASE\DATADESIGN\DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATABASE\DATADESIGN\DS.vb">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATABASE\frmData.Designer.vb">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATABASE\frmData.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EVENTS\frmEvent.Designer.vb">
@@ -186,6 +201,9 @@
     <EmbeddedResource Include="Controls1\frmControl2.resx">
       <DependentUpon>frmControl2.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DATABASE\frmData.resx">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EVENTS\frmEvent.resx">
       <DependentUpon>frmEvent.vb</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +236,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DATABASE\DATADESIGN\DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DATABASE\DATADESIGN\DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DATABASE\DATADESIGN\DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
