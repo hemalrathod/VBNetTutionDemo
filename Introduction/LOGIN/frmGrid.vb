@@ -52,9 +52,8 @@ Public Class frmGrid
             Exit Sub
         End If
         If MessageBox.Show(Me, "Delete?", "Confirm", MessageBoxButtons.YesNo) = DialogResult.Yes Then
-
             uda.Delete(username)
-        MsgBox("User deleted")
+            MsgBox("User deleted")
             RefreshGrid()
         End If
         uda = Nothing
